@@ -33,7 +33,7 @@ public class PlayPauseView extends FrameLayout {
                 }
             };
 
-    private long PLAY_PAUSE_ANIMATION_DURATION = 200;
+    private static final long PLAY_PAUSE_ANIMATION_DURATION = 200;
 
     private final PlayPauseDrawable mDrawable;
     private final Paint mPaint = new Paint();
@@ -107,16 +107,7 @@ public class PlayPauseView extends FrameLayout {
         mDrawable.draw(canvas);
     }
 
-    private static int count = 0;
-
     public void toggle() {
-        if (count > 5) {
-            PLAY_PAUSE_ANIMATION_DURATION = 1500;
-        } else {
-            PLAY_PAUSE_ANIMATION_DURATION = 200;
-        }
-        count = (count + 1) % 12;
-
         if (mAnimatorSet != null) {
             mAnimatorSet.cancel();
         }

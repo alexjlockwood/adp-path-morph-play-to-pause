@@ -3,8 +3,6 @@ package com.alexjlockwood.example.playpauseanimation;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
-import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
@@ -35,9 +33,9 @@ public class PlayPauseDrawable extends Drawable {
     private final Path mRightPauseBar = new Path();
     private final Paint mPaint = new Paint();
     private final RectF mBounds = new RectF();
-    private final float mPauseBarWidth;
-    private final float mPauseBarHeight;
-    private final float mPauseBarDistance;
+    private float mPauseBarWidth;
+    private float mPauseBarHeight;
+    private float mPauseBarDistance;
 
     private float mWidth;
     private float mHeight;
@@ -45,14 +43,10 @@ public class PlayPauseDrawable extends Drawable {
     private float mProgress;
     private boolean mIsPlay;
 
-    public PlayPauseDrawable(Context context) {
-        final Resources res = context.getResources();
+    public PlayPauseDrawable() {
         mPaint.setAntiAlias(true);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(Color.WHITE);
-        mPauseBarWidth = res.getDimensionPixelSize(R.dimen.pause_bar_width);
-        mPauseBarHeight = res.getDimensionPixelSize(R.dimen.pause_bar_height);
-        mPauseBarDistance = res.getDimensionPixelSize(R.dimen.pause_bar_distance);
     }
 
     @Override
@@ -61,6 +55,10 @@ public class PlayPauseDrawable extends Drawable {
         mBounds.set(bounds);
         mWidth = mBounds.width();
         mHeight = mBounds.height();
+
+        mPauseBarHeight = mHeight / 3f;
+        mPauseBarWidth = mPauseBarHeight / 3f;
+        mPauseBarDistance = mPauseBarWidth;
     }
 
     @Override

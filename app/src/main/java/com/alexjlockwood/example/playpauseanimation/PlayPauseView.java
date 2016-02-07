@@ -51,7 +51,7 @@ public class PlayPauseView extends FrameLayout {
         mBackgroundColor = getResources().getColor(R.color.purple);
         mPaint.setAntiAlias(true);
         mPaint.setStyle(Paint.Style.FILL);
-        mDrawable = new PlayPauseDrawable(context);
+        mDrawable = new PlayPauseDrawable();
         mDrawable.setCallback(this);
 
         mPauseBackgroundColor = getResources().getColor(R.color.purple);
@@ -60,9 +60,13 @@ public class PlayPauseView extends FrameLayout {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        final int size = Math.min(getMeasuredWidth(), getMeasuredHeight());
-        setMeasuredDimension(size, size);
+        int width = MeasureSpec.getSize(widthMeasureSpec);
+        int height = MeasureSpec.getSize(heightMeasureSpec);
+        final int size = Math.min(width, height);
+        setMeasuredDimension(
+                MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY),
+                MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY)
+        );
     }
 
     @Override

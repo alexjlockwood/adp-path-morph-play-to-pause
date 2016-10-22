@@ -1,7 +1,13 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:statusBarColor">#000</item>
+        <item name="colorPrimary">@color/quantum_indigo500</item>
+        <item name="colorPrimaryDark">@color/quantum_indigo700</item>
+        <item name="colorAccent">@color/quantum_pinkA200</item>
+    </style>
+
+    <style name="WhiteIconThemeOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">?android:attr/textColorPrimary</item>
     </style>
 
 </resources>

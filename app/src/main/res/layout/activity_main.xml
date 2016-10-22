@@ -1,10 +1,21 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToPadding="false"
     android:padding="32dp"
     tools:context=".MainActivity">
+
+    <com.alexjlockwood.example.playpauseanimation.CheckableFloatingActionButton
+        android:id="@+id/checkable_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:theme="@style/WhiteIconThemeOverlay"
+        app:srcCompat="@drawable/asl_play_pause"
+        app:useCompatPadding="true"/>
 
     <com.alexjlockwood.example.playpauseanimation.PlayPauseView
         android:id="@+id/play_pause_view"
@@ -12,6 +23,5 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:clickable="true"
-        android:foreground="?android:selectableItemBackground"
-        android:stateListAnimator="@anim/button_elevation"/>
+        android:foreground="?android:selectableItemBackground"/>
 </RelativeLayout>

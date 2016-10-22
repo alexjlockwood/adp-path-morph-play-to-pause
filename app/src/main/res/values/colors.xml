@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="purple">#6A1B9A</color>
     <color name="blue">#1565C0</color>
+    <color name="quantum_indigo500">#3f51b5</color>
+    <color name="quantum_indigo700">#303f9f</color>
+    <color name="quantum_pinkA200">#ff4081</color>
+
 </resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportHeight="192"
+    android:viewportWidth="192">
+
+    <group
+        android:name="rotationGroup"
+        android:pivotX="96"
+        android:pivotY="96"
+        android:rotation="90">
+
+        <path
+            android:name="left"
+            android:fillColor="?attr/colorControlNormal"
+            android:pathData="@string/drawable_vector_resume_left"/>
+
+        <path
+            android:name="right"
+            android:fillColor="?attr/colorControlNormal"
+            android:pathData="@string/drawable_vector_resume_right"/>
+
+    </group>
+
+</vector>

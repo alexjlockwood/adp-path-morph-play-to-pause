@@ -1,10 +1,5 @@
 <resources>
 
-    <string name="app_name">Play/Pause Animation</string>
-
-    <string name="path_pause_left">M18,16 l4,0 0,16 -4,0 z</string>
-    <string name="path_pause_right">M26,16 l4,0 0,16 -4,0 z</string>
-    <string name="path_play_left">M24,16 l0,0 0,16 -10,0 z</string>
-    <string name="path_play_right">M24,16 l0,0 10,16 -10,0 z</string>
+    <string name="app_name">Play/Pause Animated Vector Drawable</string>
 
 </resources>

@@ -8,26 +8,26 @@
         <aapt:attr name="android:animation">
             <set>
                 <objectAnimator
-                    android:duration="@android:integer/config_shortAnimTime"
+                    android:duration="@integer/animation_duration"
                     android:interpolator="@android:interpolator/decelerate_quad"
                     android:propertyName="rotation"
                     android:valueFrom="0"
                     android:valueTo="90"/>
                 <objectAnimator
-                    android:duration="@android:integer/config_shortAnimTime"
+                    android:duration="@integer/animation_duration"
                     android:interpolator="@android:interpolator/decelerate_quad"
                     android:propertyName="translateX"
                     android:valueFrom="0"
-                    android:valueTo="2"/>
+                    android:valueTo="1"/>
             </set>
         </aapt:attr>
     </target>
 
 
-    <target android:name="left">
+    <target android:name="leftPath">
         <aapt:attr name="android:animation">
             <objectAnimator
-                android:duration="@android:integer/config_shortAnimTime"
+                android:duration="@integer/animation_duration"
                 android:interpolator="@android:interpolator/decelerate_quad"
                 android:propertyName="pathData"
                 android:valueFrom="@string/path_pause_left"
@@ -36,10 +36,10 @@
         </aapt:attr>
     </target>
 
-    <target android:name="right">
+    <target android:name="rightPath">
         <aapt:attr name="android:animation">
             <objectAnimator
-                android:duration="@android:integer/config_shortAnimTime"
+                android:duration="@integer/animation_duration"
                 android:interpolator="@android:interpolator/decelerate_quad"
                 android:propertyName="pathData"
                 android:valueFrom="@string/path_pause_right"

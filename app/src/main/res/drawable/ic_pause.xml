@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="48dp"
-    android:height="48dp"
-    android:viewportHeight="48"
-    android:viewportWidth="48">
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="24"
+    android:viewportWidth="24">
 
     <group
         android:name="rotationGroup"
-        android:pivotX="24"
-        android:pivotY="24">
+        android:pivotX="12"
+        android:pivotY="12">
 
         <path
-            android:name="left"
-            android:fillColor="?android:textColorPrimaryInverse"
+            android:name="leftPath"
+            android:fillColor="?attr/colorControlNormal"
             android:pathData="@string/path_pause_left"/>
 
         <path
-            android:name="right"
-            android:fillColor="?android:textColorPrimaryInverse"
+            android:name="rightPath"
+            android:fillColor="?attr/colorControlNormal"
             android:pathData="@string/path_pause_right"/>
 
     </group>

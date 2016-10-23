@@ -29,7 +29,7 @@ public class CheckableFloatingActionButton extends FloatingActionButton implemen
 
   @Override
   public void setChecked(boolean isChecked) {
-    if (isChecked != this.isChecked) {
+    if (this.isChecked != isChecked) {
       this.isChecked = isChecked;
       refreshDrawableState();
     }

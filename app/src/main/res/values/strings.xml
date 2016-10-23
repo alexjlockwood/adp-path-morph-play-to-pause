@@ -1,10 +1,10 @@
 <resources>
 
-    <string name="app_name">Pause/Play Animation</string>
+    <string name="app_name">Play/Pause Animation</string>
 
-    <string name="drawable_vector_pause_left">M72,64 l16,0 0,64 -16,0 z</string>
-    <string name="drawable_vector_pause_right">M104,64 l16,0 0,64 -16,0 z</string>
-    <string name="drawable_vector_resume_left">M96,64 l0,0 0,64 -40,0 z</string>
-    <string name="drawable_vector_resume_right">M96,64 l0,0 40,64 -40,0 z</string>
+    <string name="path_pause_left">M18,16 l4,0 0,16 -4,0 z</string>
+    <string name="path_pause_right">M26,16 l4,0 0,16 -4,0 z</string>
+    <string name="path_play_left">M24,16 l0,0 0,16 -10,0 z</string>
+    <string name="path_play_right">M24,16 l0,0 10,16 -10,0 z</string>
 
 </resources>

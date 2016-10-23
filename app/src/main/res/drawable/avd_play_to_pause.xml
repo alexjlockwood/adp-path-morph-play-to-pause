@@ -17,7 +17,7 @@
                     android:duration="@android:integer/config_shortAnimTime"
                     android:interpolator="@android:interpolator/decelerate_quad"
                     android:propertyName="translateX"
-                    android:valueFrom="8"
+                    android:valueFrom="2"
                     android:valueTo="0"/>
             </set>
         </aapt:attr>
@@ -30,8 +30,8 @@
                 android:duration="@android:integer/config_shortAnimTime"
                 android:interpolator="@android:interpolator/decelerate_quad"
                 android:propertyName="pathData"
-                android:valueFrom="@string/drawable_vector_resume_left"
-                android:valueTo="@string/drawable_vector_pause_left"
+                android:valueFrom="@string/path_play_left"
+                android:valueTo="@string/path_pause_left"
                 android:valueType="pathType"/>
         </aapt:attr>
     </target>
@@ -42,8 +42,8 @@
                 android:duration="@android:integer/config_shortAnimTime"
                 android:interpolator="@android:interpolator/decelerate_quad"
                 android:propertyName="pathData"
-                android:valueFrom="@string/drawable_vector_resume_right"
-                android:valueTo="@string/drawable_vector_pause_right"
+                android:valueFrom="@string/path_play_right"
+                android:valueTo="@string/path_pause_right"
                 android:valueType="pathType"/>
         </aapt:attr>
     </target>

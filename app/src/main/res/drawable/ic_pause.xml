@@ -3,23 +3,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="48dp"
     android:height="48dp"
-    android:viewportHeight="192"
-    android:viewportWidth="192">
+    android:viewportHeight="48"
+    android:viewportWidth="48">
 
     <group
         android:name="rotationGroup"
-        android:pivotX="96"
-        android:pivotY="96">
+        android:pivotX="24"
+        android:pivotY="24">
 
         <path
             android:name="left"
-            android:fillColor="?attr/colorControlNormal"
-            android:pathData="@string/drawable_vector_pause_left"/>
+            android:fillColor="?android:textColorPrimaryInverse"
+            android:pathData="@string/path_pause_left"/>
 
         <path
             android:name="right"
-            android:fillColor="?attr/colorControlNormal"
-            android:pathData="@string/drawable_vector_pause_right"/>
+            android:fillColor="?android:textColorPrimaryInverse"
+            android:pathData="@string/path_pause_right"/>
 
     </group>
 

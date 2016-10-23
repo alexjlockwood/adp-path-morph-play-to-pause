@@ -12,16 +12,8 @@
         android:id="@+id/checkable_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:scaleType="center"
-        android:theme="@style/WhiteIconThemeOverlay"
-        app:srcCompat="@drawable/asl_play_pause"
         app:useCompatPadding="true"/>
 
-    <com.alexjlockwood.example.playpauseanimation.PlayPauseView
-        android:id="@+id/play_pause_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:clickable="true"
-        android:foreground="?android:selectableItemBackground"/>
 </RelativeLayout>

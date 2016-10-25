@@ -12,19 +12,19 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    final CheckableImageButton fab =
+    final CheckableImageButton icon =
         (CheckableImageButton) findViewById(R.id.checkable_fab);
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-      fab.setImageDrawable(getDrawable(R.drawable.asl_play_pause));
+      icon.setImageDrawable(getDrawable(R.drawable.asl_play_pause));
     } else {
       final AnimatedVectorDrawableCompat pauseToPlay =
           AnimatedVectorDrawableCompat.create(this, R.drawable.avd_pause_to_play);
       final AnimatedVectorDrawableCompat playToPause =
           AnimatedVectorDrawableCompat.create(this, R.drawable.avd_play_to_pause);
-      fab.setImageDrawable(playToPause);
-      fab.setOnClickListener(view -> {
-        final AnimatedVectorDrawableCompat avd = fab.isChecked() ? pauseToPlay : playToPause;
-        fab.setImageDrawable(avd);
+      icon.setImageDrawable(playToPause);
+      icon.setOnClickListener(view -> {
+        final AnimatedVectorDrawableCompat avd = icon.isChecked() ? pauseToPlay : playToPause;
+        icon.setImageDrawable(avd);
         avd.start();
       });
     }

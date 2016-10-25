@@ -4,7 +4,8 @@
     android:width="24dp"
     android:height="24dp"
     android:viewportHeight="24"
-    android:viewportWidth="24">
+    android:viewportWidth="24"
+    android:tint="?attr/colorControlNormal">
 
     <group
         android:name="rotationGroup"
@@ -13,12 +14,12 @@
 
         <path
             android:name="leftPath"
-            android:fillColor="?attr/colorControlNormal"
+            android:fillColor="@android:color/white"
             android:pathData="@string/path_pause_left"/>
 
         <path
             android:name="rightPath"
-            android:fillColor="?attr/colorControlNormal"
+            android:fillColor="@android:color/white"
             android:pathData="@string/path_pause_right"/>
 
     </group>

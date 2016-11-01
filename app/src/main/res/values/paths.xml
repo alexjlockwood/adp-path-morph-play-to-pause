@@ -1,8 +1,10 @@
 <resources>
 
-    <string name="path_pause_left">M9,8 L11,8 L11,16 L9,16 Z</string>
-    <string name="path_pause_right">M13,8 L15,8 L15,16 L13,16 Z</string>
-    <string name="path_play_left">M12,8 L12,8 L12,16 L7,16 Z</string>
-    <string name="path_play_right">M12,8 L12,8 L17,16 L12,16 Z</string>
+  <string name="path_play_left">M9,5 L9,5 L9,13 L4,13 Z</string>
+  <string name="path_play_right">M9,5 L9,5 L14,13 L9,13 Z</string>
+  <string name="path_pause_left">M6,5 L8,5 L8,13 L6,13 Z</string>
+  <string name="path_pause_right">M10,5 L12,5 L12,13 L10,13 Z</string>
+  <string name="path_stop_left">M5,5 L9,5 L9,13 L5,13 Z</string>
+  <string name="path_stop_right">M9,5 L13,5 L13,13 L9,13 Z</string>
 
 </resources>

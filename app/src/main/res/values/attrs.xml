@@ -1,0 +1,17 @@
+<resources>
+
+    <declare-styleable name="IconState">
+        <attr name="state_play" format="boolean"/>
+        <attr name="state_pause" format="boolean"/>
+        <attr name="state_stop" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="PlayPauseStopImageView">
+        <attr name="iconType">
+            <enum name="play" value="0"/>
+            <enum name="pause" value="1"/>
+            <enum name="stop" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

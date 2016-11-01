@@ -2,7 +2,7 @@
 <animated-vector
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:aapt="http://schemas.android.com/aapt"
-  android:drawable="@drawable/ic_pause">
+  android:drawable="@drawable/ic_stop">
 
   <target android:name="iconGroup">
     <aapt:attr name="android:animation">
@@ -23,14 +23,13 @@
     </aapt:attr>
   </target>
 
-
   <target android:name="leftPath">
     <aapt:attr name="android:animation">
       <objectAnimator
         android:duration="@integer/animation_duration"
         android:interpolator="@android:interpolator/decelerate_quad"
         android:propertyName="pathData"
-        android:valueFrom="@string/path_pause_left"
+        android:valueFrom="@string/path_stop_left"
         android:valueTo="@string/path_play_left"
         android:valueType="pathType"/>
     </aapt:attr>
@@ -42,7 +41,7 @@
         android:duration="@integer/animation_duration"
         android:interpolator="@android:interpolator/decelerate_quad"
         android:propertyName="pathData"
-        android:valueFrom="@string/path_pause_right"
+        android:valueFrom="@string/path_stop_right"
         android:valueTo="@string/path_play_right"
         android:valueType="pathType"/>
     </aapt:attr>

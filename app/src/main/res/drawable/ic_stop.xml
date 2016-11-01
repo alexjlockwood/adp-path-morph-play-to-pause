@@ -17,12 +17,12 @@
     <path
       android:name="leftPath"
       android:fillColor="@android:color/white"
-      android:pathData="@string/path_pause_left"/>
+      android:pathData="@string/path_stop_left"/>
 
     <path
       android:name="rightPath"
       android:fillColor="@android:color/white"
-      android:pathData="@string/path_pause_right"/>
+      android:pathData="@string/path_stop_right"/>
 
   </group>
 </vector>

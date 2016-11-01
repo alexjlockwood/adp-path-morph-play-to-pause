@@ -1,5 +1,8 @@
 <resources>
 
     <string name="app_name">Play/Pause Animated Vector Drawable</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
 
 </resources>

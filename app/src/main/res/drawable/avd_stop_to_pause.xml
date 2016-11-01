@@ -15,7 +15,6 @@
     </aapt:attr>
   </target>
 
-
   <target android:name="leftPath">
     <aapt:attr name="android:animation">
       <objectAnimator

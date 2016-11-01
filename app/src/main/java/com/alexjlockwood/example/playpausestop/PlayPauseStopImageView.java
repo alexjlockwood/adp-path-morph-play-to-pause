@@ -1,4 +1,4 @@
-package com.alexjlockwood.example.playpauseanimation;
+package com.alexjlockwood.example.playpausestop;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -1,4 +1,4 @@
-package com.alexjlockwood.example.playpauseanimation;
+package com.alexjlockwood.example.playpausestop;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

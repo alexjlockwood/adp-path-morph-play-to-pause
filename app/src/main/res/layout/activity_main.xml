@@ -14,7 +14,7 @@
         android:layout_weight="1"
         android:clipToPadding="false">
 
-        <com.alexjlockwood.example.playpauseanimation.PlayPauseStopImageView
+        <com.alexjlockwood.example.playpausestop.PlayPauseStopImageView
             android:id="@+id/icon"
             android:layout_width="200dp"
             android:layout_height="200dp"

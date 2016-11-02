@@ -11,10 +11,11 @@
 
   <string name="enable">Enable</string>
   <string name="disable">Disable</string>
-  <string name="airplane">Airplane</string>
+  <string name="airplane">Airplane mode</string>
   <string name="heart">Heart</string>
-  <string name="digits">Digits</string>
-  <string name="play_pause_stop">Play/Pause/Stop</string>
+  <string name="digits">Timer</string>
+  <string name="search_to_back">Search to back</string>
+  <string name="play_pause_stop">Play pause stop</string>
   <string name="fill_heart">Fill</string>
   <string name="break_heart">Break</string>
 

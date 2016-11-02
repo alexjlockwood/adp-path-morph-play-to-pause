@@ -25,25 +25,11 @@
 
   </RelativeLayout>
 
-  <LinearLayout
-    android:layout_width="match_parent"
+  <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-    <Button
-      android:id="@+id/break_heart"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:text="@string/break_heart"/>
-
-    <Button
-      android:id="@+id/fill_heart"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:text="@string/fill_heart"/>
-
-  </LinearLayout>
+    android:layout_gravity="center_horizontal"
+    android:text="@string/fill_heart"/>
 
 </LinearLayout>

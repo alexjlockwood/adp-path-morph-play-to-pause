@@ -1,20 +1,18 @@
 <resources>
 
-    <string name="app_name">Animated Vector Drawables</string>
+  <string name="app_name">Animated Vector Drawables</string>
 
-    <string name="play">Play</string>
-    <string name="pause">Pause</string>
-    <string name="stop">Stop</string>
+  <string name="play">Play</string>
+  <string name="pause">Pause</string>
+  <string name="stop">Stop</string>
 
-    <string name="one">1</string>
-    <string name="two">2</string>
-    <string name="three">3</string>
-    <string name="four">4</string>
-    <string name="five">5</string>
-    <string name="six">6</string>
-    <string name="seven">7</string>
-    <string name="eight">8</string>
-    <string name="nine">9</string>
-    <string name="zero">0</string>
+  <string name="search">Search</string>
+  <string name="back">Back</string>
+
+  <string name="enable">Enable</string>
+  <string name="disable">Disable</string>
+  <string name="airplane">Airplane</string>
+  <string name="digits">Digits</string>
+  <string name="play_pause_stop">Play/Pause/Stop</string>
 
 </resources>

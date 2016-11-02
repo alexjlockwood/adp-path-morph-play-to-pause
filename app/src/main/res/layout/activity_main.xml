@@ -9,21 +9,46 @@
   <TextView
     android:id="@+id/playpausestop"
     android:layout_width="match_parent"
-    android:layout_height="?attr/listPreferredItemHeight"
+    android:layout_height="?attr/listPreferredItemHeightSmall"
     android:background="?attr/selectableItemBackground"
     android:gravity="center_vertical"
     android:paddingLeft="?attr/listPreferredItemPaddingLeft"
     android:paddingRight="?attr/listPreferredItemPaddingRight"
-    android:text="Play/Pause/Stop"/>
+    android:text="@string/play_pause_stop"
+    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
 
   <TextView
     android:id="@+id/digits"
     android:layout_width="match_parent"
-    android:layout_height="?attr/listPreferredItemHeight"
+    android:layout_height="?attr/listPreferredItemHeightSmall"
     android:background="?attr/selectableItemBackground"
     android:gravity="center_vertical"
     android:paddingLeft="?attr/listPreferredItemPaddingLeft"
     android:paddingRight="?attr/listPreferredItemPaddingRight"
-    android:text="Digits"/>
+    android:text="@string/digits"
+    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+  <TextView
+    android:id="@+id/search"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeightSmall"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+    android:paddingRight="?attr/listPreferredItemPaddingRight"
+    android:text="@string/search"
+    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+  <TextView
+    android:id="@+id/airplane"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeightSmall"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+    android:paddingRight="?attr/listPreferredItemPaddingRight"
+    android:text="@string/airplane"
+    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
 
 </LinearLayout>

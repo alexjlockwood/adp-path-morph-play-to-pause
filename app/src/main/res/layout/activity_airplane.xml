@@ -1,0 +1,49 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clipToPadding="false"
+  android:orientation="vertical"
+  android:padding="16dp"
+  tools:context=".MainActivity">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:clipToPadding="false">
+
+    <ImageView
+      android:id="@+id/icon"
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:layout_centerInParent="true"
+      android:contentDescription="@null"
+      android:scaleType="fitCenter"
+      android:src="@drawable/asl_airplane"/>
+
+  </RelativeLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/enable"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/enable"/>
+
+    <Button
+      android:id="@+id/disable"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="@string/disable"/>
+
+  </LinearLayout>
+
+</LinearLayout>

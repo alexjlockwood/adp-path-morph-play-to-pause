@@ -1,13 +1,26 @@
 package com.alexjlockwood.example.morph;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.ImageView;
 
-public class DigitsActivity extends AppCompatActivity implements View.OnClickListener {
+public class DigitsActivity extends AppCompatActivity {
+  private static final int[] DIGIT_STATES = {
+      R.attr.state_zero,
+      R.attr.state_one,
+      R.attr.state_two,
+      R.attr.state_three,
+      R.attr.state_four,
+      R.attr.state_five,
+      R.attr.state_six,
+      R.attr.state_seven,
+      R.attr.state_eight,
+      R.attr.state_nine,
+  };
 
   private ImageView iconView;
+  private int currentDigitStateIndex;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -15,40 +28,24 @@ public class DigitsActivity extends AppCompatActivity implements View.OnClickLis
     setContentView(R.layout.activity_digits);
 
     iconView = (ImageView) findViewById(R.id.icon);
-    findViewById(R.id.one).setOnClickListener(this);
-    findViewById(R.id.two).setOnClickListener(this);
-    findViewById(R.id.three).setOnClickListener(this);
-    findViewById(R.id.four).setOnClickListener(this);
-    findViewById(R.id.five).setOnClickListener(this);
-    findViewById(R.id.six).setOnClickListener(this);
-    findViewById(R.id.seven).setOnClickListener(this);
-    findViewById(R.id.eight).setOnClickListener(this);
-    findViewById(R.id.nine).setOnClickListener(this);
-    findViewById(R.id.zero).setOnClickListener(this);
-  }
 
-  @Override
-  public void onClick(View view) {
-    if (view.getId() == R.id.zero) {
-      iconView.setImageState(new int[0], false);
-    } else if (view.getId() == R.id.one) {
-      iconView.setImageState(new int[]{R.attr.state_one}, false);
-    } else if (view.getId() == R.id.two) {
-      iconView.setImageState(new int[]{R.attr.state_two}, false);
-    } else if (view.getId() == R.id.three) {
-      iconView.setImageState(new int[]{R.attr.state_three}, false);
-    } else if (view.getId() == R.id.four) {
-      iconView.setImageState(new int[]{R.attr.state_four}, false);
-    } else if (view.getId() == R.id.five) {
-      iconView.setImageState(new int[]{R.attr.state_five}, false);
-    } else if (view.getId() == R.id.six) {
-      iconView.setImageState(new int[]{R.attr.state_six}, false);
-    } else if (view.getId() == R.id.seven) {
-      iconView.setImageState(new int[]{R.attr.state_seven}, false);
-    } else if (view.getId() == R.id.eight) {
-      iconView.setImageState(new int[]{R.attr.state_eight}, false);
-    } else if (view.getId() == R.id.nine) {
-      iconView.setImageState(new int[]{R.attr.state_nine}, false);
-    }
+    new CountDownTimer(Long.MAX_VALUE, 1000) {
+      @Override
+      public void onTick(long millisUntilFinished) {
+        final int[] stateSet = new int[10];
+        for (int i = 0; i < stateSet.length; i++) {
+          if (i == currentDigitStateIndex) {
+            stateSet[i] = DIGIT_STATES[i];
+          } else {
+            stateSet[i] = -DIGIT_STATES[i];
+          }
+        }
+        iconView.setImageState(stateSet, true);
+        currentDigitStateIndex = (currentDigitStateIndex + 1) % 10;
+      }
+
+      @Override
+      public void onFinish() {}
+    }.start();
   }
 }

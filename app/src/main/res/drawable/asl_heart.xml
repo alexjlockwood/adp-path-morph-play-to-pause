@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<animated-selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
 
   <item
-    android:id="@+id/disable"
-    android:drawable="@drawable/vd_airplane_disabled"
-    android:state_checked="true"/>
+    android:id="@+id/liked"
+    android:state_checked="true"
+    android:drawable="@drawable/vd_heart_full" />
 
   <item
-    android:id="@+id/enable"
-    android:drawable="@drawable/vd_airplane_enabled"/>
+    android:id="@+id/not_liked"
+    android:drawable="@drawable/vd_heart_empty" />
 
   <transition
-    android:drawable="@drawable/avd_airplane_disable_to_enable"
-    android:fromId="@id/disable"
-    android:toId="@id/enable"/>
+    android:fromId="@id/not_liked"
+    android:toId="@id/liked"
+    android:drawable="@drawable/avd_heart_fill" />
 
   <transition
-    android:drawable="@drawable/avd_airplane_enable_to_disable"
-    android:fromId="@id/enable"
-    android:toId="@id/disable"/>
+    android:fromId="@id/liked"
+    android:toId="@id/not_liked"
+    android:drawable="@drawable/avd_heart_empty" />
 
 </animated-selector>

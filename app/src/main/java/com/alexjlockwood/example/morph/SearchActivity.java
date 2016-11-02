@@ -22,9 +22,9 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
   @Override
   public void onClick(View view) {
     if (view.getId() == R.id.search) {
-      iconView.setImageState(new int[]{R.attr.state_searching}, true);
-    } else if (view.getId() == R.id.back) {
       iconView.setImageState(new int[]{-R.attr.state_searching}, true);
+    } else if (view.getId() == R.id.back) {
+      iconView.setImageState(new int[]{R.attr.state_searching}, true);
     }
   }
 }

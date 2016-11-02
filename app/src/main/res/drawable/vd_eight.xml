@@ -7,10 +7,14 @@
   android:viewportHeight="1"
   android:viewportWidth="1">
 
-  <path
-    android:name="iconPath"
-    android:strokeColor="@android:color/white"
-    android:strokeWidth="0.02"
-    android:pathData="@string/path_eight"/>
+  <group
+    android:translateX="@dimen/digit_translateX"
+    android:translateY="@dimen/digit_translateY">
+    <path
+      android:name="iconPath"
+      android:pathData="@string/path_eight"
+      android:strokeColor="@android:color/white"
+      android:strokeWidth="0.02"/>
+  </group>
 
 </vector>

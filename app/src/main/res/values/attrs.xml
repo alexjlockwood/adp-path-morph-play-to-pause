@@ -19,8 +19,4 @@
     <attr name="state_nine" format="boolean"/>
   </declare-styleable>
 
-  <declare-styleable name="SearchState">
-    <attr name="state_searching" format="boolean"/>
-  </declare-styleable>
-
 </resources>

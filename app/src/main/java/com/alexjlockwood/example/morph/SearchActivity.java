@@ -3,28 +3,30 @@ package com.alexjlockwood.example.morph;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
 public class SearchActivity extends AppCompatActivity implements View.OnClickListener {
 
-  private ImageView iconView;
+  private CheckableImageView iconView;
+  private Button button;
+  private boolean isChecked;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_search);
 
-    iconView = (ImageView) findViewById(R.id.icon);
-    findViewById(R.id.search).setOnClickListener(this);
-    findViewById(R.id.back).setOnClickListener(this);
+    iconView = (CheckableImageView) findViewById(R.id.icon);
+    button = (Button) findViewById(R.id.button);
+    button.setOnClickListener(this);
   }
 
   @Override
   public void onClick(View view) {
-    if (view.getId() == R.id.search) {
-      iconView.setImageState(new int[]{-R.attr.state_searching}, true);
-    } else if (view.getId() == R.id.back) {
-      iconView.setImageState(new int[]{R.attr.state_searching}, true);
+    if (view.getId() == R.id.button) {
+      isChecked = !isChecked;
+      button.setText(isChecked ? R.string.search : R.string.back);
+      iconView.setChecked(isChecked);
     }
   }
 }

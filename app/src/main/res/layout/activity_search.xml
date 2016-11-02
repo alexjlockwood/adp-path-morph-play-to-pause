@@ -14,7 +14,7 @@
     android:layout_weight="1"
     android:clipToPadding="false">
 
-    <ImageView
+    <com.alexjlockwood.example.morph.CheckableImageView
       android:id="@+id/icon"
       android:layout_width="200dp"
       android:layout_height="200dp"
@@ -25,25 +25,11 @@
 
   </RelativeLayout>
 
-  <LinearLayout
-    android:layout_width="match_parent"
+  <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-    <Button
-      android:id="@+id/search"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:text="@string/search"/>
-
-    <Button
-      android:id="@+id/back"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:text="@string/back"/>
-
-  </LinearLayout>
+    android:layout_gravity="center_horizontal"
+    android:text="@string/back"/>
 
 </LinearLayout>

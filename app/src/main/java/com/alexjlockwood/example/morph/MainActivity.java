@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     findViewById(R.id.digits).setOnClickListener(this);
     findViewById(R.id.search).setOnClickListener(this);
     findViewById(R.id.airplane).setOnClickListener(this);
+    findViewById(R.id.heart).setOnClickListener(this);
   }
 
   @Override
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       startActivity(new Intent(this, SearchActivity.class));
     } else if (view.getId() == R.id.airplane) {
       startActivity(new Intent(this, AirplaneActivity.class));
+    } else if (view.getId() == R.id.heart) {
+      startActivity(new Intent(this, HeartActivity.class));
     }
   }
 }

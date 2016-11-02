@@ -3,6 +3,27 @@
   xmlns:aapt="http://schemas.android.com/aapt"
   android:drawable="@drawable/vd_back">
 
+  <target android:name="arrow_head">
+    <aapt:attr name="android:animation">
+      <set>
+        <!-- First we need to immediately reset state. -->
+        <objectAnimator
+          android:duration="0"
+          android:propertyName="translateX"
+          android:valueFrom="0"
+          android:valueTo="0"/>
+
+        <!-- Then run the animation after a delay. -->
+        <objectAnimator
+          android:duration="@integer/searchback_show_hide_arrow_head_duration"
+          android:interpolator="@android:interpolator/fast_out_linear_in"
+          android:propertyName="translateX"
+          android:valueFrom="0"
+          android:valueTo="24"/>
+      </set>
+    </aapt:attr>
+  </target>
+
   <target
     android:name="arrow_head_top"
     android:animation="@animator/searchback_hide_arrow_head"/>
@@ -11,8 +32,7 @@
     android:name="arrow_head_bottom"
     android:animation="@animator/searchback_hide_arrow_head"/>
 
-  <target
-    android:name="stem">
+  <target android:name="stem">
     <aapt:attr name="android:animation">
       <set>
         <objectAnimator
@@ -32,11 +52,9 @@
     </aapt:attr>
   </target>
 
-  <target
-    android:name="search_circle">
+  <target android:name="search_circle">
     <aapt:attr name="android:animation">
       <set android:ordering="sequentially">
-
         <!-- First we need to immediately reset state. -->
         <objectAnimator
           android:duration="0"
@@ -52,7 +70,6 @@
           android:startOffset="@integer/searchback_show_circle_delay"
           android:valueFrom="@fraction/searchback_circle_back_trim_end"
           android:valueTo="@fraction/searchback_circle_search_trim_end"/>
-
       </set>
     </aapt:attr>
   </target>

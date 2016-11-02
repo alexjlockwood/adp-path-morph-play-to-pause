@@ -4,14 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class AirplaneActivity extends AppCompatActivity implements View.OnClickListener {
+public class HeartActivity extends AppCompatActivity implements View.OnClickListener {
 
   private CheckableImageView iconView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_airplane);
+    setContentView(R.layout.activity_heart);
 
     iconView = (CheckableImageView) findViewById(R.id.icon);
     findViewById(R.id.enable).setOnClickListener(this);

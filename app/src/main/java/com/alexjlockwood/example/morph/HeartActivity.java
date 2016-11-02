@@ -14,16 +14,16 @@ public class HeartActivity extends AppCompatActivity implements View.OnClickList
     setContentView(R.layout.activity_heart);
 
     iconView = (CheckableImageView) findViewById(R.id.icon);
-    findViewById(R.id.enable).setOnClickListener(this);
-    findViewById(R.id.disable).setOnClickListener(this);
+    findViewById(R.id.fill_heart).setOnClickListener(this);
+    findViewById(R.id.break_heart).setOnClickListener(this);
   }
 
   @Override
   public void onClick(View view) {
-    if (view.getId() == R.id.enable) {
-      iconView.setChecked(false);
-    } else if (view.getId() == R.id.disable) {
+    if (view.getId() == R.id.fill_heart) {
       iconView.setChecked(true);
+    } else if (view.getId() == R.id.break_heart) {
+      iconView.setChecked(false);
     }
   }
 }

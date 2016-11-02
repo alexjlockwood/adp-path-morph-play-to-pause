@@ -15,5 +15,7 @@
   <string name="heart">Heart</string>
   <string name="digits">Digits</string>
   <string name="play_pause_stop">Play/Pause/Stop</string>
+  <string name="fill_heart">Fill</string>
+  <string name="break_heart">Break</string>
 
 </resources>

@@ -2,7 +2,7 @@
 <animated-vector
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:aapt="http://schemas.android.com/aapt"
-  android:drawable="@drawable/vd_stop">
+  android:drawable="@drawable/vd_play">
 
   <target android:name="iconGroup">
     <aapt:attr name="android:animation">

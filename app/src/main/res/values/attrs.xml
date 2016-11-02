@@ -19,4 +19,10 @@
     <attr name="state_nine" format="boolean"/>
   </declare-styleable>
 
+  <declare-styleable name="FingerprintState">
+    <attr name="state_on" format="boolean"/>
+    <attr name="state_off" format="boolean"/>
+    <attr name="state_error" format="boolean"/>
+  </declare-styleable>
+
 </resources>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+    android:id="@+id/one"
+    android:drawable="@drawable/vd_one"
+    app:state_one="true"/>
+
+  <item
+    android:id="@+id/two"
+    android:drawable="@drawable/vd_two"
+    app:state_two="true"/>
+
+  <item
+    android:id="@+id/three"
+    android:drawable="@drawable/vd_three"
+    app:state_three="true"/>
+
+  <item
+    android:id="@+id/four"
+    android:drawable="@drawable/vd_four"
+    app:state_four="true"/>
+
+  <item
+    android:id="@+id/five"
+    android:drawable="@drawable/vd_five"
+    app:state_five="true"/>
+
+  <item
+    android:id="@+id/six"
+    android:drawable="@drawable/vd_six"
+    app:state_six="true"/>
+
+  <item
+    android:id="@+id/seven"
+    android:drawable="@drawable/vd_seven"
+    app:state_seven="true"/>
+
+  <item
+    android:id="@+id/eight"
+    android:drawable="@drawable/vd_eight"
+    app:state_eight="true"/>
+
+  <item
+    android:id="@+id/nine"
+    android:drawable="@drawable/vd_nine"
+    app:state_nine="true"/>
+
+  <item
+    android:id="@+id/zero"
+    android:drawable="@drawable/vd_zero"/>
+
+  <!-- 0 -->
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_one"
+    android:fromId="@id/zero"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_two"
+    android:fromId="@id/zero"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_three"
+    android:fromId="@id/zero"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_four"
+    android:fromId="@id/zero"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_five"
+    android:fromId="@id/zero"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_six"
+    android:fromId="@id/zero"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_seven"
+    android:fromId="@id/zero"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_eight"
+    android:fromId="@id/zero"
+    android:toId="@id/eight"/>
+
+  <transition
+    android:drawable="@drawable/avd_zero_to_nine"
+    android:fromId="@id/zero"
+    android:toId="@id/nine"/>
+
+  <!-- 1 -->
+
+  <transition
+    android:drawable="@drawable/avd_one_to_zero"
+    android:fromId="@id/one"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_one_to_two"
+    android:fromId="@id/one"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_one_to_three"
+    android:fromId="@id/one"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_one_to_four"
+    android:fromId="@id/one"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_one_to_five"
+    android:fromId="@id/one"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_one_to_six"
+    android:fromId="@id/one"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_one_to_seven"
+    android:fromId="@id/one"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_one_to_eight"
+    android:fromId="@id/one"
+    android:toId="@id/eight"/>
+
+  <transition
+    android:drawable="@drawable/avd_one_to_nine"
+    android:fromId="@id/one"
+    android:toId="@id/nine"/>
+
+  <!-- 2 -->
+
+  <transition
+    android:drawable="@drawable/avd_two_to_zero"
+    android:fromId="@id/two"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_two_to_one"
+    android:fromId="@id/two"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_two_to_three"
+    android:fromId="@id/two"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_two_to_four"
+    android:fromId="@id/two"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_two_to_five"
+    android:fromId="@id/two"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_two_to_six"
+    android:fromId="@id/two"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_two_to_seven"
+    android:fromId="@id/two"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_two_to_eight"
+    android:fromId="@id/two"
+    android:toId="@id/eight"/>
+
+  <transition
+    android:drawable="@drawable/avd_two_to_nine"
+    android:fromId="@id/two"
+    android:toId="@id/nine"/>
+
+  <!-- 3 -->
+
+  <transition
+    android:drawable="@drawable/avd_three_to_zero"
+    android:fromId="@id/three"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_three_to_one"
+    android:fromId="@id/three"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_three_to_two"
+    android:fromId="@id/three"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_three_to_four"
+    android:fromId="@id/three"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_three_to_five"
+    android:fromId="@id/three"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_three_to_six"
+    android:fromId="@id/three"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_three_to_seven"
+    android:fromId="@id/three"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_three_to_eight"
+    android:fromId="@id/three"
+    android:toId="@id/eight"/>
+
+  <transition
+    android:drawable="@drawable/avd_three_to_nine"
+    android:fromId="@id/three"
+    android:toId="@id/nine"/>
+
+  <!-- 4 -->
+
+  <transition
+    android:drawable="@drawable/avd_four_to_zero"
+    android:fromId="@id/four"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_four_to_one"
+    android:fromId="@id/four"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_four_to_two"
+    android:fromId="@id/four"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_four_to_three"
+    android:fromId="@id/four"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_four_to_five"
+    android:fromId="@id/four"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_four_to_six"
+    android:fromId="@id/four"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_four_to_seven"
+    android:fromId="@id/four"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_four_to_eight"
+    android:fromId="@id/four"
+    android:toId="@id/eight"/>
+
+  <transition
+    android:drawable="@drawable/avd_four_to_nine"
+    android:fromId="@id/four"
+    android:toId="@id/nine"/>
+
+  <!-- 5 -->
+
+  <transition
+    android:drawable="@drawable/avd_five_to_zero"
+    android:fromId="@id/five"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_five_to_one"
+    android:fromId="@id/five"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_five_to_two"
+    android:fromId="@id/five"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_five_to_three"
+    android:fromId="@id/five"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_five_to_four"
+    android:fromId="@id/five"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_five_to_six"
+    android:fromId="@id/five"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_five_to_seven"
+    android:fromId="@id/five"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_five_to_eight"
+    android:fromId="@id/five"
+    android:toId="@id/eight"/>
+
+  <transition
+    android:drawable="@drawable/avd_five_to_nine"
+    android:fromId="@id/five"
+    android:toId="@id/nine"/>
+
+  <!-- 6 -->
+
+  <transition
+    android:drawable="@drawable/avd_six_to_zero"
+    android:fromId="@id/six"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_six_to_one"
+    android:fromId="@id/six"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_six_to_two"
+    android:fromId="@id/six"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_six_to_three"
+    android:fromId="@id/six"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_six_to_four"
+    android:fromId="@id/six"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_six_to_five"
+    android:fromId="@id/six"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_six_to_seven"
+    android:fromId="@id/six"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_six_to_eight"
+    android:fromId="@id/six"
+    android:toId="@id/eight"/>
+
+  <transition
+    android:drawable="@drawable/avd_six_to_nine"
+    android:fromId="@id/six"
+    android:toId="@id/nine"/>
+
+  <!-- 7 -->
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_zero"
+    android:fromId="@id/seven"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_one"
+    android:fromId="@id/seven"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_two"
+    android:fromId="@id/seven"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_three"
+    android:fromId="@id/seven"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_four"
+    android:fromId="@id/seven"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_five"
+    android:fromId="@id/seven"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_six"
+    android:fromId="@id/seven"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_eight"
+    android:fromId="@id/seven"
+    android:toId="@id/eight"/>
+
+  <transition
+    android:drawable="@drawable/avd_seven_to_nine"
+    android:fromId="@id/seven"
+    android:toId="@id/nine"/>
+
+  <!-- 8 -->
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_zero"
+    android:fromId="@id/eight"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_one"
+    android:fromId="@id/eight"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_two"
+    android:fromId="@id/eight"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_three"
+    android:fromId="@id/eight"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_four"
+    android:fromId="@id/eight"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_five"
+    android:fromId="@id/eight"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_six"
+    android:fromId="@id/eight"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_seven"
+    android:fromId="@id/eight"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_eight_to_nine"
+    android:fromId="@id/eight"
+    android:toId="@id/nine"/>
+
+  <!-- 9 -->
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_zero"
+    android:fromId="@id/nine"
+    android:toId="@id/zero"/>
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_one"
+    android:fromId="@id/nine"
+    android:toId="@id/one"/>
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_two"
+    android:fromId="@id/nine"
+    android:toId="@id/two"/>
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_three"
+    android:fromId="@id/nine"
+    android:toId="@id/three"/>
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_four"
+    android:fromId="@id/nine"
+    android:toId="@id/four"/>
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_five"
+    android:fromId="@id/nine"
+    android:toId="@id/five"/>
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_six"
+    android:fromId="@id/nine"
+    android:toId="@id/six"/>
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_seven"
+    android:fromId="@id/nine"
+    android:toId="@id/seven"/>
+
+  <transition
+    android:drawable="@drawable/avd_nine_to_eight"
+    android:fromId="@id/nine"
+    android:toId="@id/eight"/>
+
+</animated-selector>

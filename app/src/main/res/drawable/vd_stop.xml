@@ -15,14 +15,9 @@
     android:translateX="0">
 
     <path
-      android:name="leftPath"
+      android:name="iconPath"
       android:fillColor="@android:color/white"
-      android:pathData="@string/path_stop_left"/>
-
-    <path
-      android:name="rightPath"
-      android:fillColor="@android:color/white"
-      android:pathData="@string/path_stop_right"/>
+      android:pathData="@string/path_stop"/>
 
   </group>
 

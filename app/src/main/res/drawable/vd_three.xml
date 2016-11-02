@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="18dp"
+  android:height="18dp"
+  android:tint="?attr/colorControlNormal"
+  android:viewportHeight="1"
+  android:viewportWidth="1">
+
+  <path
+    android:name="iconPath"
+    android:strokeColor="@android:color/white"
+    android:strokeWidth="0.02"
+    android:pathData="@string/path_three"/>
+
+</vector>

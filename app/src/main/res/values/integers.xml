@@ -1,5 +1,0 @@
-<resources>
-
-    <integer name="animation_duration">@android:integer/config_shortAnimTime</integer>
-
-</resources>

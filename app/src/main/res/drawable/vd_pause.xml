@@ -11,18 +11,13 @@
     android:name="iconGroup"
     android:pivotX="9"
     android:pivotY="9"
-    android:rotation="90"
-    android:translateX="0.75">
+    android:rotation="0"
+    android:translateX="0">
 
     <path
-      android:name="leftPath"
+      android:name="iconPath"
       android:fillColor="@android:color/white"
-      android:pathData="@string/path_play_left"/>
-
-    <path
-      android:name="rightPath"
-      android:fillColor="@android:color/white"
-      android:pathData="@string/path_play_right"/>
+      android:pathData="@string/path_pause"/>
 
   </group>
 

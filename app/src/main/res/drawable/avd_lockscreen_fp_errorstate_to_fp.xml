@@ -1,6 +1,6 @@
 <animated-vector
   xmlns:android="http://schemas.android.com/apk/res/android"
-  android:drawable="@drawable/lockscreen_fingerprint_error_state_to_fp">
+  android:drawable="@drawable/vd_lockscreen_fp_error_state_to_fp">
   <target
     android:name="white_fingerprint_ridges"
     android:animation="@anim/lockscreen_fingerprint_error_state_to_fp_white_fingerprint_ridges_animation"/>

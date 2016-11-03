@@ -5,35 +5,35 @@
 
   <item
     android:id="@+id/error"
-    android:drawable="@drawable/lockscreen_fingerprint_fp_to_error_state"
+    android:drawable="@drawable/vd_lockscreen_fp_fp_to_error_state"
     app:state_error="true"/>
 
   <item
     android:id="@+id/on"
-    android:drawable="@drawable/lockscreen_fingerprint_draw_on"
+    android:drawable="@drawable/vd_lockscreen_fp_draw_on"
     app:state_on="true"/>
 
   <item
     android:id="@+id/off"
-    android:drawable="@drawable/lockscreen_fingerprint_draw_off"/>
+    android:drawable="@drawable/vd_lockscreen_fp_draw_off"/>
 
   <transition
-    android:drawable="@drawable/lockscreen_fingerprint_draw_on_animation"
+    android:drawable="@drawable/avd_lockscreen_fp_draw_on"
     android:fromId="@id/off"
     android:toId="@id/on"/>
 
   <transition
-    android:drawable="@drawable/lockscreen_fingerprint_draw_off_animation"
+    android:drawable="@drawable/avd_lockscreen_fp_draw_off"
     android:fromId="@id/on"
     android:toId="@id/off"/>
 
   <transition
-    android:drawable="@drawable/lockscreen_fingerprint_fp_to_error_state_animation"
+    android:drawable="@drawable/avd_lockscreen_fp_fp_to_error_state"
     android:fromId="@id/on"
     android:toId="@id/error"/>
 
   <transition
-    android:drawable="@drawable/lockscreen_fingerprint_error_state_to_fp_animation"
+    android:drawable="@drawable/avd_lockscreen_fp_errorstate_to_fp"
     android:fromId="@id/error"
     android:toId="@id/on"/>
 

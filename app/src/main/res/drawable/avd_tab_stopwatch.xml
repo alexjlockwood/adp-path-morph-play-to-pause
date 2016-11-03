@@ -1,0 +1,10 @@
+<animated-vector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:drawable="@drawable/ic_stopwatch">
+  <target
+    android:name="hand"
+    android:animation="@animator/ic_stopwatch_animation_hand"/>
+  <target
+    android:name="button"
+    android:animation="@animator/ic_stopwatch_animation_button"/>
+</animated-vector>

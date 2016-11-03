@@ -5,6 +5,9 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class DigitsActivity extends AppCompatActivity {
   private static final int[] DIGIT_STATES = {
       R.attr.state_zero,
@@ -19,15 +22,15 @@ public class DigitsActivity extends AppCompatActivity {
       R.attr.state_nine,
   };
 
-  private ImageView iconView;
+  @BindView(R.id.icon) ImageView iconView;
+
   private int currentDigitStateIndex;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_digits);
-
-    iconView = (ImageView) findViewById(R.id.icon);
+    ButterKnife.bind(this);
 
     new CountDownTimer(Long.MAX_VALUE, 1000) {
       @Override

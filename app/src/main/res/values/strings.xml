@@ -21,5 +21,8 @@
   <string name="break_heart">Break</string>
   <string name="fingerprint">Fingerprint</string>
   <string name="uploading">Uploading</string>
+  <string name="clock">Clock</string>
+  <string name="hamburger">Hamburger</string>
+  <string name="click">Click</string>
 
 </resources>

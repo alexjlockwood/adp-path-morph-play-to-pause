@@ -9,13 +9,13 @@
     app:state_error="true"/>
 
   <item
-    android:id="@+id/on"
-    android:drawable="@drawable/vd_lockscreen_fp_draw_on"
-    app:state_on="true"/>
+    android:id="@+id/off"
+    android:drawable="@drawable/vd_lockscreen_fp_draw_off"
+    app:state_off="true"/>
 
   <item
-    android:id="@+id/off"
-    android:drawable="@drawable/vd_lockscreen_fp_draw_off"/>
+    android:id="@+id/on"
+    android:drawable="@drawable/vd_lockscreen_fp_draw_on"/>
 
   <transition
     android:drawable="@drawable/avd_lockscreen_fp_draw_on"

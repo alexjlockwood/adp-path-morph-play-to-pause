@@ -3,40 +3,43 @@ package com.alexjlockwood.example.morph;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.SparseArray;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
+public class MainActivity extends AppCompatActivity {
+
+  private static final SparseArray<Class<?>> LIST_ITEM_TO_ACTIVITY_MAP = new SparseArray<>();
+  static {
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.playpausestop, PlayPauseStopActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.digits, DigitsActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.search, SearchActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.airplane, AirplaneActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.heart, HeartActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.fingerprint, FingerprintActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.clock, ClockActivity.class);
+  }
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-
-    findViewById(R.id.playpausestop).setOnClickListener(this);
-    findViewById(R.id.digits).setOnClickListener(this);
-    findViewById(R.id.search).setOnClickListener(this);
-    findViewById(R.id.airplane).setOnClickListener(this);
-    findViewById(R.id.heart).setOnClickListener(this);
-    findViewById(R.id.fingerprint).setOnClickListener(this);
-    findViewById(R.id.uploading).setOnClickListener(this);
+    ButterKnife.bind(this);
   }
 
-  @Override
-  public void onClick(View view) {
-    if (view.getId() == R.id.playpausestop) {
-      startActivity(new Intent(this, PlayPauseStopActivity.class));
-    } else if (view.getId() == R.id.digits) {
-      startActivity(new Intent(this, DigitsActivity.class));
-    } else if (view.getId() == R.id.search) {
-      startActivity(new Intent(this, SearchActivity.class));
-    } else if (view.getId() == R.id.airplane) {
-      startActivity(new Intent(this, AirplaneActivity.class));
-    } else if (view.getId() == R.id.heart) {
-      startActivity(new Intent(this, HeartActivity.class));
-    } else if (view.getId() == R.id.fingerprint) {
-      startActivity(new Intent(this, FingerprintActivity.class));
-    } else if (view.getId() == R.id.uploading) {
-      startActivity(new Intent(this, UploadingActivity.class));
-    }
+  @OnClick({
+      R.id.playpausestop,
+      R.id.digits,
+      R.id.search,
+      R.id.airplane,
+      R.id.heart,
+      R.id.fingerprint,
+      R.id.uploading,
+      R.id.clock,
+  })
+  void onListItemClick(View view) {
+    startActivity(new Intent(this, LIST_ITEM_TO_ACTIVITY_MAP.get(view.getId())));
   }
 }

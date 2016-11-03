@@ -12,4 +12,13 @@
     <item name="colorAccent">@color/quantum_pinkA200</item>
   </style>
 
+  <style name="MainActivityListItem">
+    <item name="android:minHeight">?attr/listPreferredItemHeightSmall</item>
+    <item name="android:paddingLeft">?attr/listPreferredItemPaddingLeft</item>
+    <item name="android:paddingRight">?attr/listPreferredItemPaddingRight</item>
+    <item name="android:gravity">start|center_vertical</item>
+    <item name="android:background">?attr/selectableItemBackground</item>
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+  </style>
+
 </resources>

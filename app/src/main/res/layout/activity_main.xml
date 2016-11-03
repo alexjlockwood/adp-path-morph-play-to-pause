@@ -8,85 +8,63 @@
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <TextView
       android:id="@+id/playpausestop"
+      style="@style/MainActivityListItem"
       android:layout_width="match_parent"
-      android:layout_height="?attr/listPreferredItemHeightSmall"
-      android:background="?attr/selectableItemBackground"
-      android:gravity="center_vertical"
-      android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-      android:paddingRight="?attr/listPreferredItemPaddingRight"
-      android:text="@string/play_pause_stop"
-      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+      android:layout_height="wrap_content"
+      android:text="@string/play_pause_stop"/>
 
     <TextView
       android:id="@+id/digits"
+      style="@style/MainActivityListItem"
       android:layout_width="match_parent"
-      android:layout_height="?attr/listPreferredItemHeightSmall"
-      android:background="?attr/selectableItemBackground"
-      android:gravity="center_vertical"
-      android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-      android:paddingRight="?attr/listPreferredItemPaddingRight"
-      android:text="@string/digits"
-      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+      android:layout_height="wrap_content"
+      android:text="@string/digits"/>
 
     <TextView
       android:id="@+id/search"
+      style="@style/MainActivityListItem"
       android:layout_width="match_parent"
-      android:layout_height="?attr/listPreferredItemHeightSmall"
-      android:background="?attr/selectableItemBackground"
-      android:gravity="center_vertical"
-      android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-      android:paddingRight="?attr/listPreferredItemPaddingRight"
-      android:text="@string/search_to_back"
-      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+      android:layout_height="wrap_content"
+      android:text="@string/search_to_back"/>
 
     <TextView
       android:id="@+id/airplane"
+      style="@style/MainActivityListItem"
       android:layout_width="match_parent"
-      android:layout_height="?attr/listPreferredItemHeightSmall"
-      android:background="?attr/selectableItemBackground"
-      android:gravity="center_vertical"
-      android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-      android:paddingRight="?attr/listPreferredItemPaddingRight"
-      android:text="@string/airplane"
-      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+      android:layout_height="wrap_content"
+      android:text="@string/airplane"/>
 
     <TextView
       android:id="@+id/heart"
+      style="@style/MainActivityListItem"
       android:layout_width="match_parent"
-      android:layout_height="?attr/listPreferredItemHeightSmall"
-      android:background="?attr/selectableItemBackground"
-      android:gravity="center_vertical"
-      android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-      android:paddingRight="?attr/listPreferredItemPaddingRight"
-      android:text="@string/heart"
-      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+      android:layout_height="wrap_content"
+      android:text="@string/heart"/>
 
     <TextView
       android:id="@+id/fingerprint"
+      style="@style/MainActivityListItem"
       android:layout_width="match_parent"
-      android:layout_height="?attr/listPreferredItemHeightSmall"
-      android:background="?attr/selectableItemBackground"
-      android:gravity="center_vertical"
-      android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-      android:paddingRight="?attr/listPreferredItemPaddingRight"
-      android:text="@string/fingerprint"
-      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+      android:layout_height="wrap_content"
+      android:text="@string/fingerprint"/>
 
     <TextView
       android:id="@+id/uploading"
+      style="@style/MainActivityListItem"
       android:layout_width="match_parent"
-      android:layout_height="?attr/listPreferredItemHeightSmall"
-      android:background="?attr/selectableItemBackground"
-      android:gravity="center_vertical"
-      android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-      android:paddingRight="?attr/listPreferredItemPaddingRight"
-      android:text="@string/uploading"
-      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+      android:layout_height="wrap_content"
+      android:text="@string/uploading"/>
+
+    <TextView
+      android:id="@+id/clock"
+      style="@style/MainActivityListItem"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/clock"/>
   </LinearLayout>
 
 </ScrollView>

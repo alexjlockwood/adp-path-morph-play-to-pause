@@ -1,0 +1,13 @@
+<animated-vector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:drawable="@drawable/vd_timer">
+  <target
+    android:name="hourglass_frame"
+    android:animation="@animator/ic_timer_animation_hourglass_frame"/>
+  <target
+    android:name="hourglass_fill"
+    android:animation="@animator/ic_timer_animation_hourglass_fill"/>
+  <target
+    android:name="mask_1"
+    android:animation="@animator/ic_timer_animation_mask_1"/>
+</animated-vector>

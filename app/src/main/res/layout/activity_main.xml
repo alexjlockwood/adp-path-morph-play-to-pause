@@ -76,6 +76,17 @@
       android:paddingRight="?attr/listPreferredItemPaddingRight"
       android:text="@string/fingerprint"
       android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+    <TextView
+      android:id="@+id/uploading"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/listPreferredItemHeightSmall"
+      android:background="?attr/selectableItemBackground"
+      android:gravity="center_vertical"
+      android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+      android:paddingRight="?attr/listPreferredItemPaddingRight"
+      android:text="@string/uploading"
+      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
   </LinearLayout>
 
 </ScrollView>

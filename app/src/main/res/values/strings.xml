@@ -20,5 +20,6 @@
   <string name="fill_heart">Fill</string>
   <string name="break_heart">Break</string>
   <string name="fingerprint">Fingerprint</string>
+  <string name="uploading">Uploading</string>
 
 </resources>

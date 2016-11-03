@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     findViewById(R.id.airplane).setOnClickListener(this);
     findViewById(R.id.heart).setOnClickListener(this);
     findViewById(R.id.fingerprint).setOnClickListener(this);
+    findViewById(R.id.uploading).setOnClickListener(this);
   }
 
   @Override
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
       startActivity(new Intent(this, HeartActivity.class));
     } else if (view.getId() == R.id.fingerprint) {
       startActivity(new Intent(this, FingerprintActivity.class));
+    } else if (view.getId() == R.id.uploading) {
+      startActivity(new Intent(this, UploadingActivity.class));
     }
   }
 }

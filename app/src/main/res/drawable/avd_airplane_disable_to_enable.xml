@@ -18,7 +18,7 @@
     <aapt:attr name="android:animation">
       <objectAnimator
         android:duration="350"
-        android:interpolator="@anim/airplane_enable_mask"
+        android:interpolator="@interpolator/airplane_enable_mask"
         android:propertyName="pathData"
         android:valueFrom="@string/airplane_mask_clip_path_disabled"
         android:valueTo="@string/airplane_mask_clip_path_enabled"
@@ -31,7 +31,7 @@
       <set>
         <objectAnimator
           android:duration="350"
-          android:interpolator="@anim/airplane_enable_cross_1"
+          android:interpolator="@interpolator/airplane_enable_cross_1"
           android:propertyName="pathData"
           android:valueFrom="@string/airplane_cross_path_disabled"
           android:valueTo="@string/airplane_cross_path_enabled"

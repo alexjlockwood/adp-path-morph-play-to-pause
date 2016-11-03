@@ -2,31 +2,30 @@ package com.alexjlockwood.example.morph;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 
-public class AirplaneActivity extends AppCompatActivity implements View.OnClickListener {
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-  private CheckableImageView iconView;
-  private Button button;
+public class AirplaneActivity extends AppCompatActivity {
+
+  @BindView(R.id.icon) CheckableImageView iconView;
+  @BindView(R.id.button) Button button;
+
   private boolean isChecked;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_airplane);
-
-    iconView = (CheckableImageView) findViewById(R.id.icon);
-    button = (Button) findViewById(R.id.button);
-    button.setOnClickListener(this);
+    ButterKnife.bind(this);
   }
 
-  @Override
-  public void onClick(View view) {
-    if (view.getId() == R.id.button) {
-      isChecked = !isChecked;
-      button.setText(isChecked ? R.string.disable : R.string.enable);
-      iconView.setChecked(isChecked);
-    }
+  @OnClick(R.id.button)
+  void onButtonClick() {
+    isChecked = !isChecked;
+    button.setText(isChecked ? R.string.disable : R.string.enable);
+    iconView.setChecked(isChecked);
   }
 }

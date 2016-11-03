@@ -36,7 +36,7 @@
           android:valueTo="1"/>
         <objectAnimator
           android:duration="333"
-          android:interpolator="@anim/airplane_disable_cross_1"
+          android:interpolator="@interpolator/airplane_disable_cross_1"
           android:propertyName="pathData"
           android:valueFrom="@string/airplane_cross_path_enabled"
           android:valueTo="@string/airplane_cross_path_disabled"

@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.airplane, AirplaneActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.heart, HeartActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.fingerprint, FingerprintActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.uploading, UploadingActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.clock, ClockActivity.class);
   }
 

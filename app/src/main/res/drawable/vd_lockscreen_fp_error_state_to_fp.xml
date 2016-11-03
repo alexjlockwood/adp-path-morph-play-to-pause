@@ -6,6 +6,7 @@
   android:tint="?attr/colorControlNormal"
   android:viewportHeight="32"
   android:viewportWidth="32">
+
   <group
     android:name="white_fingerprint_ridges"
     android:rotation="200.66753"

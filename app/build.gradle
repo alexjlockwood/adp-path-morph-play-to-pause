@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.3"
 
     defaultConfig {
-        applicationId "com.alexjlockwood.example.playpauseanimation"
+        applicationId "com.alexjlockwood.example.morph"
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 1

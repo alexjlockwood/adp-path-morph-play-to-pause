@@ -1,0 +1,9 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+  <objectAnimator
+    android:duration="140"
+    android:interpolator="@interpolator/lockscreen_fingerprint_draw_off_animation_interpolator_0"
+    android:propertyName="trimPathEnd"
+    android:valueFrom="1"
+    android:valueTo="0"
+    android:valueType="floatType"/>
+</set>

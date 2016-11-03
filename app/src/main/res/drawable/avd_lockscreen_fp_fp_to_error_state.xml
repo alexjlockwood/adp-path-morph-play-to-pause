@@ -3,53 +3,53 @@
   android:drawable="@drawable/vd_lockscreen_fp_fp_to_error_state">
   <target
     android:name="white_fingerprint_ridges"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_white_fingerprint_ridges_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_white_fingerprint_ridges_animation"/>
   <target
     android:name="ridge_5_path"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_5_path_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_5_path_animation"/>
   <target
     android:name="ridge_7_path"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_7_path_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_7_path_animation"/>
   <target
     android:name="ridge_6_path"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_6_path_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_6_path_animation"/>
   <target
     android:name="ridge_2_path"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_2_path_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_2_path_animation"/>
   <target
     android:name="ridge_1_path"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_1_path_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_1_path_animation"/>
   <target
     android:name="fingerprint_ridges"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_fingerprint_ridges_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_fingerprint_ridges_animation"/>
   <target
     android:name="ridge_5_path_0"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_5_path_0_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_5_path_0_animation"/>
   <target
     android:name="ridge_7_path_0"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_7_path_0_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_7_path_0_animation"/>
   <target
     android:name="ridge_6_path_0"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_6_path_0_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_6_path_0_animation"/>
   <target
     android:name="ridge_2_path_0"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_2_path_0_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_2_path_0_animation"/>
   <target
     android:name="ridge_1_path_0"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_ridge_1_path_0_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_ridge_1_path_0_animation"/>
   <target
     android:name="group_2"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_group_2_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_group_2_animation"/>
   <target
     android:name="path_2"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_path_2_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_path_2_animation"/>
   <target
     android:name="path_1"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_path_1_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_path_1_animation"/>
   <target
     android:name="group_1"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_group_1_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_group_1_animation"/>
   <target
     android:name="path_3"
-    android:animation="@anim/lockscreen_fingerprint_fp_to_error_state_path_3_animation"/>
+    android:animation="@animator/lockscreen_fingerprint_fp_to_error_state_path_3_animation"/>
 </animated-vector>

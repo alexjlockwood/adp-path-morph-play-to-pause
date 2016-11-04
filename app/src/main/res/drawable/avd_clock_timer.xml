@@ -15,7 +15,7 @@
   </target>
 
   <target android:name="hourglass_fill">
-    <aapt:attr name="android:animation">e
+    <aapt:attr name="android:animation">
       <objectAnimator
         android:duration="333"
         android:interpolator="@android:interpolator/fast_out_slow_in"

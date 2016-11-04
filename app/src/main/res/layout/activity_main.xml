@@ -72,6 +72,13 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="@string/drawer"/>
+
+    <TextView
+      android:id="@+id/expandcollapse"
+      style="@style/MainActivityListItem"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/expandcollapse"/>
   </LinearLayout>
 
 </ScrollView>

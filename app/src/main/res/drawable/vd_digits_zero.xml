@@ -14,7 +14,7 @@
       android:name="iconPath"
       android:pathData="@string/path_zero"
       android:strokeColor="@android:color/white"
-      android:strokeWidth="0.02"/>
+      android:strokeWidth="@dimen/digit_strokewidth"/>
   </group>
 
 </vector>

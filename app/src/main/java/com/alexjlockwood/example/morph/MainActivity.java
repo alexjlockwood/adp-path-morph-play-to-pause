@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.uploading, UploadingActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.clock, ClockActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.drawer, DrawerActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.expandcollapse, ExpandCollapseActivity.class);
   }
 
   @Override
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
       R.id.uploading,
       R.id.clock,
       R.id.drawer,
+      R.id.expandcollapse,
   })
   void onListItemClick(View view) {
     startActivity(new Intent(this, LIST_ITEM_TO_ACTIVITY_MAP.get(view.getId())));

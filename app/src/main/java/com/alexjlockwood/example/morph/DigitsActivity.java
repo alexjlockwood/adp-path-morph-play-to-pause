@@ -24,7 +24,7 @@ public class DigitsActivity extends AppCompatActivity {
   };
 
   @BindView(R.id.icon) ImageView iconView;
-  private int currentDigitStateIndex;
+  private int nextDigitStateIndex;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +35,16 @@ public class DigitsActivity extends AppCompatActivity {
 
   @OnClick(R.id.rootview)
   void onClick() {
-    currentDigitStateIndex = (currentDigitStateIndex + 1) % 10;
-    final int[] stateSet = new int[10];
+    final int numStates = DIGIT_STATES.length;
+    final int[] stateSet = new int[numStates];
     for (int i = 0; i < stateSet.length; i++) {
-      if (i == currentDigitStateIndex) {
-        stateSet[i] = DIGIT_STATES[i];
+      if (i == nextDigitStateIndex) {
+        stateSet[i] = DIGIT_STATES[numStates - i - 1];
       } else {
-        stateSet[i] = -DIGIT_STATES[i];
+        stateSet[i] = -DIGIT_STATES[numStates - i - 1];
       }
     }
     iconView.setImageState(stateSet, true);
+    nextDigitStateIndex = (nextDigitStateIndex + 1) % numStates;
   }
 }

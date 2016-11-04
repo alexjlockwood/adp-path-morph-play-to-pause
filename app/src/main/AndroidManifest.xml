@@ -51,6 +51,10 @@
       android:name="com.alexjlockwood.example.morph.DrawerActivity"
       android:label="@string/app_name"
       android:theme="@style/AppThemeNoActionBar"/>
+    <activity
+      android:name="com.alexjlockwood.example.morph.ExpandCollapseActivity"
+      android:label="@string/app_name"
+      android:theme="@style/AppThemeNoActionBar"/>
   </application>
 
 </manifest>

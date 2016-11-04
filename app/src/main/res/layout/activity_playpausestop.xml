@@ -17,7 +17,7 @@
       android:layout_centerInParent="true"
       android:contentDescription="@null"
       android:scaleType="fitCenter"
-      android:src="@drawable/asl_play_pause_stop"/>
+      android:src="@drawable/asl_playpausestop"/>
 
   </RelativeLayout>
 

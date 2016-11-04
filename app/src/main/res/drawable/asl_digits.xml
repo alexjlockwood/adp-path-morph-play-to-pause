@@ -5,52 +5,52 @@
 
   <item
     android:id="@+id/one"
-    android:drawable="@drawable/vd_one"
+    android:drawable="@drawable/vd_digits_one"
     app:state_one="true"/>
 
   <item
     android:id="@+id/two"
-    android:drawable="@drawable/vd_two"
+    android:drawable="@drawable/vd_digits_two"
     app:state_two="true"/>
 
   <item
     android:id="@+id/three"
-    android:drawable="@drawable/vd_three"
+    android:drawable="@drawable/vd_digits_three"
     app:state_three="true"/>
 
   <item
     android:id="@+id/four"
-    android:drawable="@drawable/vd_four"
+    android:drawable="@drawable/vd_digits_four"
     app:state_four="true"/>
 
   <item
     android:id="@+id/five"
-    android:drawable="@drawable/vd_five"
+    android:drawable="@drawable/vd_digits_five"
     app:state_five="true"/>
 
   <item
     android:id="@+id/six"
-    android:drawable="@drawable/vd_six"
+    android:drawable="@drawable/vd_digits_six"
     app:state_six="true"/>
 
   <item
     android:id="@+id/seven"
-    android:drawable="@drawable/vd_seven"
+    android:drawable="@drawable/vd_digits_seven"
     app:state_seven="true"/>
 
   <item
     android:id="@+id/eight"
-    android:drawable="@drawable/vd_eight"
+    android:drawable="@drawable/vd_digits_eight"
     app:state_eight="true"/>
 
   <item
     android:id="@+id/nine"
-    android:drawable="@drawable/vd_nine"
+    android:drawable="@drawable/vd_digits_nine"
     app:state_nine="true"/>
 
   <item
     android:id="@+id/zero"
-    android:drawable="@drawable/vd_zero"/>
+    android:drawable="@drawable/vd_digits_zero"/>
 
   <!-- 0 -->
 

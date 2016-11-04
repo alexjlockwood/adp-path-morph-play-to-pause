@@ -18,6 +18,6 @@
   <transition
     android:fromId="@id/liked"
     android:toId="@id/not_liked"
-    android:drawable="@drawable/avd_heart_empty" />
+    android:drawable="@drawable/avd_heart_break" />
 
 </animated-selector>

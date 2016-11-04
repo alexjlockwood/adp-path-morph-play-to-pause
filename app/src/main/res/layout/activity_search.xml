@@ -11,6 +11,6 @@
     android:layout_centerInParent="true"
     android:contentDescription="@null"
     android:scaleType="fitCenter"
-    android:src="@drawable/asl_searchback"/>
+    android:src="@drawable/asl_trimpath_searchback"/>
 
 </RelativeLayout>

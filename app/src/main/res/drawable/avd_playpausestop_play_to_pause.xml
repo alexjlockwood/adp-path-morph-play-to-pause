@@ -2,7 +2,7 @@
 <animated-vector
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:aapt="http://schemas.android.com/aapt"
-  android:drawable="@drawable/vd_play">
+  android:drawable="@drawable/vd_playpausestop_pause">
 
   <target android:name="iconGroup">
     <aapt:attr name="android:animation">
@@ -11,14 +11,14 @@
           android:duration="@android:integer/config_shortAnimTime"
           android:interpolator="@android:interpolator/decelerate_quad"
           android:propertyName="rotation"
-          android:valueFrom="0"
-          android:valueTo="90"/>
+          android:valueFrom="90"
+          android:valueTo="180"/>
         <objectAnimator
           android:duration="@android:integer/config_shortAnimTime"
           android:interpolator="@android:interpolator/decelerate_quad"
           android:propertyName="translateX"
-          android:valueFrom="0"
-          android:valueTo="0.75"/>
+          android:valueFrom="0.75"
+          android:valueTo="0"/>
       </set>
     </aapt:attr>
   </target>
@@ -29,8 +29,8 @@
         android:duration="@android:integer/config_shortAnimTime"
         android:interpolator="@android:interpolator/decelerate_quad"
         android:propertyName="pathData"
-        android:valueFrom="@string/path_pause"
-        android:valueTo="@string/path_play"
+        android:valueFrom="@string/path_play"
+        android:valueTo="@string/path_pause"
         android:valueType="pathType"/>
     </aapt:attr>
   </target>

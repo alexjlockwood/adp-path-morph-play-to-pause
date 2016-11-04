@@ -2,7 +2,7 @@
 <animated-vector
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:aapt="http://schemas.android.com/aapt"
-  android:drawable="@drawable/vd_four">
+  android:drawable="@drawable/vd_digits_four">
 
   <target android:name="iconPath">
     <aapt:attr name="android:animation">

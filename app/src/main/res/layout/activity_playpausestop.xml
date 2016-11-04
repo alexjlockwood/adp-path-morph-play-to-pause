@@ -8,8 +8,7 @@
   <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
-    android:layout_weight="1"
-    android:clipToPadding="false">
+    android:layout_weight="1">
 
     <ImageView
       android:id="@+id/icon"
@@ -18,7 +17,7 @@
       android:layout_centerInParent="true"
       android:contentDescription="@null"
       android:scaleType="fitCenter"
-      android:src="@drawable/asl_fingerprint"/>
+      android:src="@drawable/asl_play_pause_stop"/>
 
   </RelativeLayout>
 
@@ -28,28 +27,25 @@
     android:orientation="horizontal">
 
     <Button
-      android:id="@+id/on"
+      android:id="@+id/play"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      android:enabled="false"
-      android:text="@string/on"/>
+      android:text="@string/play"/>
 
     <Button
-      android:id="@+id/off"
+      android:id="@+id/pause"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      android:enabled="true"
-      android:text="@string/off"/>
+      android:text="@string/pause"/>
 
     <Button
-      android:id="@+id/error"
+      android:id="@+id/stop"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      android:enabled="true"
-      android:text="@string/error"/>
+      android:text="@string/stop"/>
 
   </LinearLayout>
 

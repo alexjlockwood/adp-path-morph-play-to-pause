@@ -32,11 +32,11 @@
       android:text="@string/search_to_back"/>
 
     <TextView
-      android:id="@+id/airplane"
+      android:id="@+id/clippath"
       style="@style/MainActivityListItem"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="@string/airplane"/>
+      android:text="@string/clippath"/>
 
     <TextView
       android:id="@+id/heart"
@@ -65,6 +65,13 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="@string/clock"/>
+
+    <TextView
+      android:id="@+id/drawer"
+      style="@style/MainActivityListItem"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/drawer"/>
   </LinearLayout>
 
 </ScrollView>

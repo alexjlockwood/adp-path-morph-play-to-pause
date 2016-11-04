@@ -23,8 +23,8 @@ public class ClockActivity extends AppCompatActivity {
     ButterKnife.bind(this);
   }
 
-  @OnClick(R.id.button)
-  void onButtonClick() {
+  @OnClick(R.id.rootview)
+  void onClick() {
     ((Animatable) alarmView.getDrawable()).start();
     ((Animatable) clockView.getDrawable()).start();
     ((Animatable) timerView.getDrawable()).start();

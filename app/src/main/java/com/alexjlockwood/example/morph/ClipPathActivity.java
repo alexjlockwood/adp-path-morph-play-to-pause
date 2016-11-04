@@ -7,19 +7,21 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class HeartActivity extends AppCompatActivity {
+public class ClipPathActivity extends AppCompatActivity {
 
-  @BindView(R.id.icon) CheckableImageView iconView;
+  @BindView(R.id.airplane) CheckableImageView airplaneView;
+  @BindView(R.id.flashlight) CheckableImageView flashlightView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_heart);
+    setContentView(R.layout.activity_clippath);
     ButterKnife.bind(this);
   }
 
   @OnClick(R.id.rootview)
   void onClick() {
-    iconView.toggle();
+    airplaneView.toggle();
+    flashlightView.toggle();
   }
 }

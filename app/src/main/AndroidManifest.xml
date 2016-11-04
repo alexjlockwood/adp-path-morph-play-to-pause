@@ -28,7 +28,7 @@
       android:label="@string/app_name"
       android:theme="@style/AppThemeNoActionBar"/>
     <activity
-      android:name="com.alexjlockwood.example.morph.AirplaneActivity"
+      android:name="com.alexjlockwood.example.morph.ClipPathActivity"
       android:label="@string/app_name"
       android:theme="@style/AppThemeNoActionBar"/>
     <activity
@@ -45,6 +45,10 @@
       android:theme="@style/AppThemeNoActionBar"/>
     <activity
       android:name="com.alexjlockwood.example.morph.ClockActivity"
+      android:label="@string/app_name"
+      android:theme="@style/AppThemeNoActionBar"/>
+    <activity
+      android:name="com.alexjlockwood.example.morph.DrawerActivity"
       android:label="@string/app_name"
       android:theme="@style/AppThemeNoActionBar"/>
   </application>

@@ -16,11 +16,12 @@ public class MainActivity extends AppCompatActivity {
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.playpausestop, PlayPauseStopActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.digits, DigitsActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.search, SearchActivity.class);
-    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.airplane, AirplaneActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.clippath, ClipPathActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.heart, HeartActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.fingerprint, FingerprintActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.uploading, UploadingActivity.class);
     LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.clock, ClockActivity.class);
+    LIST_ITEM_TO_ACTIVITY_MAP.put(R.id.drawer, DrawerActivity.class);
   }
 
   @Override
@@ -34,11 +35,12 @@ public class MainActivity extends AppCompatActivity {
       R.id.playpausestop,
       R.id.digits,
       R.id.search,
-      R.id.airplane,
+      R.id.clippath,
       R.id.heart,
       R.id.fingerprint,
       R.id.uploading,
       R.id.clock,
+      R.id.drawer,
   })
   void onListItemClick(View view) {
     startActivity(new Intent(this, LIST_ITEM_TO_ACTIVITY_MAP.get(view.getId())));

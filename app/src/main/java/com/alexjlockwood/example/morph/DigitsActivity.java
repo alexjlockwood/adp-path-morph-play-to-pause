@@ -23,7 +23,6 @@ public class DigitsActivity extends AppCompatActivity {
   };
 
   @BindView(R.id.icon) ImageView iconView;
-
   private int currentDigitStateIndex;
 
   @Override

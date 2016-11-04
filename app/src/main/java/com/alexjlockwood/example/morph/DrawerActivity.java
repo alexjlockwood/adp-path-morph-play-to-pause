@@ -7,14 +7,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class HeartActivity extends AppCompatActivity {
+public class DrawerActivity extends AppCompatActivity {
 
   @BindView(R.id.icon) CheckableImageView iconView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_heart);
+    setContentView(R.layout.activity_drawer);
     ButterKnife.bind(this);
   }
 

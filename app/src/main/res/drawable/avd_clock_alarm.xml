@@ -3,5 +3,5 @@
   android:drawable="@drawable/vd_clock_alarm">
   <target
     android:name="button"
-    android:animation="@animator/ic_alarm_animation_button"/>
+    android:animation="@animator/clock_alarm_button"/>
 </animated-vector>

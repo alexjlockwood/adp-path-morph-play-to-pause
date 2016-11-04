@@ -3,8 +3,8 @@
   android:drawable="@drawable/vd_clock_stopwatch">
   <target
     android:name="hand"
-    android:animation="@animator/ic_stopwatch_animation_hand"/>
+    android:animation="@animator/clock_stopwatch_hand"/>
   <target
     android:name="button"
-    android:animation="@animator/ic_stopwatch_animation_button"/>
+    android:animation="@animator/clock_stopwatch_button"/>
 </animated-vector>

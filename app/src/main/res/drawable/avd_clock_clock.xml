@@ -3,8 +3,8 @@
   android:drawable="@drawable/vd_clock_clock">
   <target
     android:name="hour_hand"
-    android:animation="@animator/ic_clock_hour_hand_animation"/>
+    android:animation="@animator/clock_clock_hour_hand"/>
   <target
     android:name="minute_hand"
-    android:animation="@animator/ic_clock_minute_hand_animation"/>
+    android:animation="@animator/clock_clock_minute_hand"/>
 </animated-vector>

@@ -1,14 +1,15 @@
 package com.alexjlockwood.example.morph;
 
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class DigitsActivity extends AppCompatActivity {
+
   private static final int[] DIGIT_STATES = {
       R.attr.state_zero,
       R.attr.state_one,
@@ -30,24 +31,19 @@ public class DigitsActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_digits);
     ButterKnife.bind(this);
+  }
 
-    new CountDownTimer(Long.MAX_VALUE, 1000) {
-      @Override
-      public void onTick(long millisUntilFinished) {
-        final int[] stateSet = new int[10];
-        for (int i = 0; i < stateSet.length; i++) {
-          if (i == currentDigitStateIndex) {
-            stateSet[i] = DIGIT_STATES[i];
-          } else {
-            stateSet[i] = -DIGIT_STATES[i];
-          }
-        }
-        iconView.setImageState(stateSet, true);
-        currentDigitStateIndex = (currentDigitStateIndex + 1) % 10;
+  @OnClick(R.id.rootview)
+  void onClick() {
+    currentDigitStateIndex = (currentDigitStateIndex + 1) % 10;
+    final int[] stateSet = new int[10];
+    for (int i = 0; i < stateSet.length; i++) {
+      if (i == currentDigitStateIndex) {
+        stateSet[i] = DIGIT_STATES[i];
+      } else {
+        stateSet[i] = -DIGIT_STATES[i];
       }
-
-      @Override
-      public void onFinish() {}
-    }.start();
+    }
+    iconView.setImageState(stateSet, true);
   }
 }

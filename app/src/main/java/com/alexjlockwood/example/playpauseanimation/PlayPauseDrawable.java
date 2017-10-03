@@ -14,6 +14,7 @@ import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.NonNull;
 import android.util.Property;
 
 public class PlayPauseDrawable extends Drawable {
@@ -64,7 +65,7 @@ public class PlayPauseDrawable extends Drawable {
     }
 
     @Override
-    public void draw(Canvas canvas) {
+    public void draw(@NonNull Canvas canvas) {
         mLeftPauseBar.rewind();
         mRightPauseBar.rewind();
 
@@ -157,9 +158,7 @@ public class PlayPauseDrawable extends Drawable {
         return PixelFormat.TRANSLUCENT;
     }
 
-    /**
-     * Linear interpolate between a and b with parameter t.
-     */
+    /** Linear interpolate between a and b with parameter t. */
     private static float lerp(float a, float b, float t) {
         return a + (b - a) * t;
     }
